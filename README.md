@@ -38,27 +38,11 @@ Voici les intructions, elles sont toutes accompagnés de la liste de commit atte
 
 ![Exercice 1](https://github.com/sl-samyazirou/git-academy-workshop/blob/main/img/1.PNG?raw=true "Exercice 1")
 
-- Solution
-
-```sh
-$ git checkout main
-$ git rebase feature1
-```
-
 ### 2) Rebase feature2 in master
 
 - Resultat Attendu
 
 ![Exercice 2](https://github.com/sl-samyazirou/git-academy-workshop/blob/main/img/2.PNG?raw=true "Exercice 2")
-
-- Solution
-
-```sh
-$ git checkout feature2
-$ git rebase main
-$ git checkout main
-$ git rebase feature2
-```
 
 ### 3) Keep only odd number
 
@@ -66,27 +50,11 @@ $ git rebase feature2
 
 ![Exercice 3](https://github.com/sl-samyazirou/git-academy-workshop/blob/main/img/3.PNG?raw=true "Exercice 3")
 
-- Solution
-
-```sh
-$ git rebase -i HEAD~5 // delete commit 2, 4 and 6
-```
-
 ### 4) Rebase feature3 in master
 
 - Resultat Attendu
 
 ![Exercice 4](https://github.com/sl-samyazirou/git-academy-workshop/blob/main/img/4.PNG?raw=true "Exercice 4")
-
-- Solution
-
-```sh
-$ git checkout feature3
-$ git rebase -i HEAD~5 // delete commit 2, 4 and 6
-$ git rebase main
-$ git checkout main
-$ git rebase feature3
-```
 
 ### 5) Pick commit 42 into master
 
@@ -94,26 +62,11 @@ $ git rebase feature3
 
 ![Exercice 5](https://github.com/sl-samyazirou/git-academy-workshop/blob/main/img/5.PNG?raw=true "Exercice 5")
 
-- Solution
-
-```sh
-$ git checkout 42
-$ git log // Copy paste commit 42 reference
-$ git checkout main
-$ git cherry-pick refCommit42
-```
-
 ### 6) Rename commit 42 to 8
 
 - Resultat Attendu
 
 ![Exercice 6](https://github.com/sl-samyazirou/git-academy-workshop/blob/main/img/6.PNG?raw=true "Exercice 6")
-
-- Solution
-
-```sh
-$ git rebase -i // Rename commit 42
-```
 
 ## License
 
